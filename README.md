@@ -14,14 +14,14 @@ CLASSES:
 Role for Each Class:
 1. Players 
 - player name
-- player score (life score)
+- how many lives a player has left
 
 2. Questions 
 - generate question for certain player to answer 
+- generate the correct answer to the question asked 
 
 3. Game 
 - keep track of whose turn it is to answer questions 
-- how many lives a player has left 
 - should the game continue on after each round 
 - who won 
 
