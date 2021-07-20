@@ -1,16 +1,19 @@
-class Questions 
-  attr_reader :answer 
+class Question 
+  attr_reader :answer
 
-  def initialize
-    @answer = answer 
+  def initialize(player_name)
+    @first_num = rand(1...20)
+    @second_num = rand(1...20)
+    @answer = @first_num + @second_num
+    @player_name = player_name
   end 
 
-  def generate_question 
-    number = Random.new 
-    first_num = num.rand(100)
-    second_num = num.rand(100)
-    answer = first_num + second_num
-    puts "what does #{first_num} + #{second_num} equals to?"
+  def ask 
+    puts " #{@player_name} what does #{@first_num} + #{@second_num} equals to?"
+  end 
+
+  def check_answer (answer) #boolean
+    answer == @answer
   end 
   
 end 

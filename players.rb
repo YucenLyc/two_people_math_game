@@ -1,10 +1,14 @@
 class Player 
-  attr_accessor :life_score 
-  attr_reader :name 
+  attr_reader :name, :life
 
   def initialize(name)
     @name = name 
     @life = 3
   end
+
+  def update_life
+    @life -= 1
+  end 
 end 
+
 
